@@ -4,13 +4,13 @@ on:
   repository_dispatch:
 #  release:
 #    types: published
-  push:
-    branches:
-      - master
-    paths:
-      - 'aarch64/ARMv8_Docker.config'
-  schedule:
-    - cron: 0 16 * * *
+  # push:
+  #   branches:
+  #     - master
+  #   paths:
+  #     - 'aarch64/ARMv8_Docker.config'
+  # schedule:
+  #   - cron: 0 16 * * *
   # watch:
   #   types: started
 

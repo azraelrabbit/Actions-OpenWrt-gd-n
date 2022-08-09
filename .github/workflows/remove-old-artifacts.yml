@@ -1,11 +1,12 @@
 name: Remove old artifacts
 
 on:
-  schedule:
-    # Every day at 1am
-    - cron: '0 2 * * *'
-  watch:
-    types: started
+  repository_dispatch:
+  # schedule:
+  #   # Every day at 1am
+  #   - cron: '0 2 * * *'
+  # watch:
+  #   types: started
 
 jobs:
   remove-old-artifacts:

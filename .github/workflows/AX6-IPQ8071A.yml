@@ -4,15 +4,15 @@ on:
   repository_dispatch:
 #  release:
 #    types: published
-  push:
-    branches:
-      - master
-    paths:
-      - 'AX6/AX6.config'
-  schedule:
-    - cron: 0 16 * * *
-  watch:
-    types: started
+  # push:
+  #   branches:
+  #     - master
+  #   paths:
+  #     - 'AX6/AX6.config'
+  # schedule:
+  #   - cron: 0 16 * * *
+  # watch:
+  #   types: started
 
 env:
   REPO_URL: https://github.com/Boos4721/openwrt
