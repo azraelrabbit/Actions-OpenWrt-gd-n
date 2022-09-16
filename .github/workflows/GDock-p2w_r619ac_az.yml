@@ -28,7 +28,7 @@ env:
   UPLOAD_FIRMWARE: false
   TZ: Asia/Shanghai
   FILE_NAME: GDock-p2w_r619ac_az
-  PRODUCT_NAME: GDock
+  PRODUCT_NAME: GDock_AZ
 
 jobs:
   build:
