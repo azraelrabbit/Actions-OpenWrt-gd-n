@@ -108,6 +108,8 @@ rm -rf /home/xyz/lede/package/mosdns
 rm -rf /home/xyz/lede/package/luci-app-mosdns
 rm -rf /home/xyz/lede/package/sagernet-core
 rm -rf /home/xyz/lede/package/lua-neturl
+rm -rf /home/xyz/lede/package/luci-app-alist
+rm -rf /home/xyz/lede/package/alist
 
 svn co https://github.com/HoldOnBro/packages/trunk/luci-app-adblock-plus /home/xyz/lede/package/luci-app-adblock-plus
 svn co https://github.com/lisaac/luci-app-dockerman/trunk/applications/luci-app-dockerman /home/xyz/lede/package/luci-app-dockerman
@@ -117,6 +119,7 @@ svn co https://github.com/brvphoenix/wrtbwmon/trunk/wrtbwmon /home/xyz/lede/pack
 svn co https://github.com/kiddin9/openwrt-bypass/trunk/luci-app-bypass /home/xyz/lede/package/luci-app-bypass
 find /home/xyz/lede/package/*/ /home/xyz/lede/feeds/*/ -maxdepth 2 -path "*luci-app-vssr/Makefile" | xargs -i sed -i 's/shadowsocksr-libev-alt/shadowsocksr-libev-ssr-redir/g' {}
 find /home/xyz/lede/package/*/ /home/xyz/lede/feeds/*/ -maxdepth 2 -path "*luci-app-vssr/Makefile" | xargs -i sed -i 's/shadowsocksr-libev-server/shadowsocksr-libev-ssr-server/g' {}
+sed -i 's/luci-lib-ipkg/luci-base/g' /home/xyz/lede/package/luci-app-bypass/Makefile
 #find /home/xyz/lede/package/*/ /home/xyz/lede/feeds/*/ -maxdepth 2 -path "*luci-app-bypass/Makefile" | xargs -i sed -i 's/shadowsocksr-libev-ssr-redir/shadowsocksr-libev-alt/g' {}
 #find /home/xyz/lede/package/*/ /home/xyz/lede/feeds/*/ -maxdepth 2 -path "*luci-app-bypass/Makefile" | xargs -i sed -i 's/shadowsocksr-libev-ssr-server/shadowsocksr-libev-server/g' {}
 #find /home/xyz/lede/package/luci-app-bypass/* -maxdepth 8 -path "*" | xargs -i sed -i 's/smartdns-le/smartdns/g' {}
@@ -153,6 +156,8 @@ svn co https://github.com/fw876/helloworld/trunk/sagernet-core /home/xyz/lede/pa
 svn co https://github.com/kenzok8/openwrt-packages/trunk/luci-app-eqos /home/xyz/lede/package/luci-app-eqos
 svn co https://github.com/kenzok8/openwrt-packages/trunk/mosdns /home/xyz/lede/package/mosdns
 svn co https://github.com/kenzok8/openwrt-packages/trunk/luci-app-mosdns /home/xyz/lede/package/luci-app-mosdns
+svn co https://github.com/kenzok8/small-package/trunk/luci-app-alist /home/xyz/lede/package/luci-app-alist
+svn co https://github.com/kenzok8/small-package/trunk/alist /home/xyz/lede/package/alist
 #svn co https://github.com/kenzok8/openwrt-packages/trunk/luci-app-gost /home/xyz/lede/package/luci-app-gost
 #svn co https://github.com/kenzok8/openwrt-packages/trunk/gost /home/xyz/lede/package/gost
 svn co https://github.com/fw876/helloworld/trunk/luci-app-ssr-plus /home/xyz/lede/package/luci-app-ssr-plus

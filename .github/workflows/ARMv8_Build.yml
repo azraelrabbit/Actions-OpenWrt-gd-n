@@ -1,6 +1,7 @@
 name: ARMv8_Build
 
 on:
+  workflow_dispatch:
   repository_dispatch:
 #  release:
 #    types: published
@@ -28,7 +29,7 @@ env:
 jobs:
   build:
     runs-on: ubuntu-20.04
-    if: github.event.repository.owner.id == github.event.sender.id
+    # if: github.event.repository.owner.id == github.event.sender.id
 
     steps:
     #- name: WeChat notification
