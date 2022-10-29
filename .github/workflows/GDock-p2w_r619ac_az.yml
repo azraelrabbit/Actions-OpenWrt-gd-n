@@ -1,8 +1,8 @@
 name: GDock-p2w_r619ac_az
 
 on:
-  repository_dispatch:
   workflow_dispatch:
+  repository_dispatch:
 #  release:
 #    types: published
   #push:
@@ -33,7 +33,7 @@ env:
 jobs:
   build:
     runs-on: ubuntu-20.04
-    if: github.event.repository.owner.id == github.event.sender.id
+   # if: github.event.repository.owner.id == github.event.sender.id
 
     steps:
     #- name: WeChat notification
