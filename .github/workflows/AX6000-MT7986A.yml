@@ -5,15 +5,15 @@ on:
   repository_dispatch:
 #  release:
 #    types: published
-  push:
-    branches:
-      - master
-    paths:
-      - 'AX6000/AX6000.config'
-  schedule:
-    - cron: 0 16 * * *
-  watch:
-    types: started
+  # push:
+  #   branches:
+  #     - master
+  #   paths:
+  #     - 'AX6000/AX6000.config'
+  # schedule:
+  #   - cron: 0 16 * * *
+  # watch:
+  #   types: started
 
 env:
   REPO_URL: https://github.com/coolsnowwolf/lede
