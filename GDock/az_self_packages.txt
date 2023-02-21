@@ -23,7 +23,8 @@ CONFIG_PACKAGE_n2n-supernode=y
 
 #- for Nebula from slack
 CONFIG_PACKAGE_nebula=y
-CONFIG_PACKAGE_nebula-cert=y
+# CONFIG_PACKAGE_nebula-cert=y
 
 #apps
 CONFIG_PACKAGE_ariang=y
+CONFIG_PACKAGE_nano=y
