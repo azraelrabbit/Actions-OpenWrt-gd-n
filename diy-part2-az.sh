@@ -32,8 +32,8 @@ git clone https://github.com/jerrykuku/lua-maxminddb.git package/lua-maxminddb
 git clone https://github.com/kongfl888/luci-app-adguardhome.git package/luci-app-adguardhome
 # svn co https://github.com/lisaac/luci-app-dockerman/trunk/applications/luci-app-dockerman package/luci-app-dockerman
 git clone https://github.com/rufengsuixing/luci-app-autoipsetadder.git package/luci-app-autoipsetadder
-git clone https://github.com/mchome/openwrt-dogcom.git package/openwrt-dogcom
-git clone https://github.com/mchome/luci-app-dogcom.git package/luci-app-dogcom
+# git clone https://github.com/mchome/openwrt-dogcom.git package/openwrt-dogcom
+# git clone https://github.com/mchome/luci-app-dogcom.git package/luci-app-dogcom
 #git clone https://github.com/garypang13/luci-app-dnsfilter package/luci-app-dnsfilter
 #git clone https://github.com/small-5/luci-app-adblock-plus package/luci-app-adblock-plus
 # svn co https://github.com/HoldOnBro/packages/trunk/luci-app-adblock-plus package/luci-app-adblock-plus
@@ -44,9 +44,9 @@ git clone https://github.com/mchome/luci-app-dogcom.git package/luci-app-dogcom
 #rm -rf package/OpenClash
 # svn co https://github.com/vernesong/OpenClash/trunk/luci-app-openclash package/luci-app-openclash
 # 编译 po2lmo (如果有po2lmo可跳过)
-pushd package/luci-app-openclash/tools/po2lmo
-make && sudo make install
-popd
+# pushd package/luci-app-openclash/tools/po2lmo
+# make && sudo make install
+# popd
 svn co https://github.com/xiaorouji/openwrt-passwall/trunk/brook package/brook
 svn co https://github.com/xiaorouji/openwrt-passwall/trunk/chinadns-ng package/chinadns-ng
 svn co https://github.com/xiaorouji/openwrt-passwall/trunk/tcping package/tcping
