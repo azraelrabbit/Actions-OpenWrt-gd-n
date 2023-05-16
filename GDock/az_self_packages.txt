@@ -29,3 +29,6 @@ CONFIG_PACKAGE_nebula=y
 CONFIG_PACKAGE_ariang=y
 CONFIG_PACKAGE_nano=y
 CONFIG_PACKAGE_ncdu=y
+CONFIG_PACKAGE_luci-app-diskman=y
+CONFIG_PACKAGE_luci-app-diskman_INCLUDE_btrfs_progs=y
+CONFIG_PACKAGE_luci-app-diskman_INCLUDE_lsblk=y
